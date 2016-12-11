@@ -7,14 +7,11 @@
     <h2>Evergreen Tree</h2>
     <div>
       Tree Height:
-      <input type="text" name="treeHeight">
-    </div>
-    <br>
-    <div>
+      <input type="text" id="treeHeight" onkeyup="keypressEvent(event);">
       Tree Character:
-      <input type="text" name="treeElement">
+      <input type="text" id="treeElement" size="1" onkeyup="keypressEvent(event);">
+      <button id="goGreen">Go Green</button>
     </div>
-    <button name="grow">Grow Your Tree </button>
     <script type="text/javaScript" src="main.js"></script>
   </body>
 </html>
