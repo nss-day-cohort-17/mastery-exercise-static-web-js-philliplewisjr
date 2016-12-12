@@ -1,7 +1,7 @@
 
 
 
-    
+    //
     var gatherInputAndBuildTree = function(){
           var treeBuilder = gatherInput();
           drawTree(treeBuilder);
@@ -17,7 +17,7 @@
           }
       }
     }
-//field validation function
+//checks to see if user inputs correct character and character length and number
 var validateInput = function(){
   var heightFieldValue = document.getElementById("treeHeight").value; 
   var characterFieldValue = document.getElementById("treeElement").value;
@@ -33,7 +33,7 @@ return "height must be a number";
   return "";
 };
 
-//input object data
+//input object data function that provides key value pair for the object
     function gatherInput () {
     var mytreeBuilder = {};
     var inputNum = document.getElementById("treeHeight");
@@ -65,7 +65,7 @@ return "height must be a number";
 
 
 
-
+//eventListener for submit button and error message for empty input field
   var b1 = document.getElementById("goGreen");
   b1.addEventListener("click", function(){
     var inputErrorMessage = validateInput();
